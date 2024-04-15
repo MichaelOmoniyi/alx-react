@@ -13,11 +13,3 @@
 .Notifications ul {
     margin-left: 40px;
 }
-
-ul [data-priority="default"] {
-    color: blue;
-}
-
-ul [data-priority="urgent"] {
-    color: red;
-}

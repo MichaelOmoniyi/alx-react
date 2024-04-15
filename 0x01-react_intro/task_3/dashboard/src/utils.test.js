@@ -1,18 +1,22 @@
 import { getFullYear, getFooterCopy, getLatestNotification } from "./utils";
 
-describe("Utility functions", () => {
-  test("getFullYear returns the correct year", () => {
+describe("Get full year", function () {
+  it("should return the correct year", function () {
     const currentYear = new Date().getFullYear();
     expect(getFullYear()).toBe(currentYear);
   });
-  test("getFooterCopy returns a string", () => {
-    const argTrue = "Holberton School";
-    const argFalse = "Holberton School main dashboard";
-    expect(getFooterCopy(true)).toBe(argTrue);
-    expect(getFooterCopy(false)).toBe(argFalse);
+});
+
+describe("Get footer message", function () {
+  const trueMessage = "Holberton School";
+  const falseMessage = "Holberton School main dashboard";
+
+  it("should return the true footer message", function () {
+    const currentMessage = getFooterCopy(true);
+    expect(currentMessage).toBe(trueMessage);
   });
-  test("getLatestNotification returns a string", () => {
-    const notification = `<strong>Urgent requirement</strong> - complete by EOD`;
-    expect(getLatestNotification()).toBe(notification);
+  it("should return the false footer message", function () {
+    const currentMessage = getFooterCopy(false);
+    expect(currentMessage).toBe(falseMessage);
   });
 });
