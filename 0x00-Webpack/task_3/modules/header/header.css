@@ -1,0 +1,13 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+    background-image: url('../../assets/holberton-logo.jpg');
+    background-size: 200px 200px;
+}
