@@ -76,8 +76,8 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   devServer: {
+    contentBase: "./public", // Set content base to './public'
     port: 8564,
-    contentBase: path.resolve(__dirname, "public"),
   },
   devtool: "inline-source-map",
 };
