@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-body {
+  height: 100%;
+  border-bottom: 3px solid rgb(243, 6, 6);
+  padding: 30px 40px;
+  flex-grow: 2;
+  font-weight: 600;
+  overflow: auto hidden;
+}
+
+.App-body button {
+  margin-left: 10px;
+}
