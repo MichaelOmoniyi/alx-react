@@ -64,8 +64,12 @@ export default class App extends Component {
 
 App.defaultProps = {
   isLoggedIn: false,
+  logOut: () => {
+    return;
+  },
 };
 
 App.propTypes = {
   isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func,
 };
