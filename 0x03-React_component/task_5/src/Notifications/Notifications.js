@@ -1,15 +1,20 @@
 import React from "react";
 import "./Notifications.css";
-import { getLatestNotification } from "../utils/utils";
 import closeIcon from "../assets/close-icon.png";
 import NotificationItem from "./NotificationItem";
 import PropeTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
 
-export default class Notifications extends React.Component {
+class Notifications extends React.Component {
   constructor(props) {
     super(props);
     this.markAsRead = this.markAsRead.bind(this);
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return (
+      nextProps.listNotifications.length > this.props.listNotifications.length
+    );
   }
 
   markAsRead(id) {
@@ -81,3 +86,5 @@ Notifications.propTypes = {
   displayDrawer: PropeTypes.bool,
   listNotifications: PropeTypes.arrayOf(NotificationItemShape),
 };
+
+export default Notifications;
