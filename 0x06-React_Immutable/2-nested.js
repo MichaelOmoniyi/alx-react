@@ -1,6 +1,6 @@
 const { fromJS } = require("immutable");
 
-function accessImmutableObject(object, array) {
+export default function accessImmutableObject(object, array) {
   const mappedData = fromJS(object);
   console.log(mappedData.getIn(array, undefined));
 
