@@ -7,7 +7,7 @@ obj = {
   thing: -914767132,
 };
 
-function getImmutableObject(object) {
+export default function getImmutableObject(object) {
   return fromJS(object);
 }
 
