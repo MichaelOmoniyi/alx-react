@@ -4,6 +4,7 @@ function mergeDeeplyElements(page1, page2) {
   return Map(page1).mergeDeep(Map(page2));
 }
 
+// Below is a test for the above function
 const page1 = {
   "user-1": {
     id: 1,
