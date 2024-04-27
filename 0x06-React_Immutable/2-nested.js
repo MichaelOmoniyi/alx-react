@@ -6,13 +6,3 @@ export default function accessImmutableObject(object, array) {
 
   return mappedData.getIn(array);
 }
-
-accessImmutableObject(
-  {
-    name: {
-      first: 'Guillaume',
-      last: 'Salva',
-    },
-  },
-  ['name', 'first']
-);
