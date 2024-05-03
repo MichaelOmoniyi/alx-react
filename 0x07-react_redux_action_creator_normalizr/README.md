@@ -1,5 +1,4 @@
-# 0x06. React Immutable
-# 0x05. React state
+# 0x07. React Redux action creator+normalizr
 In this project I continue my React learning, I learned:
 
 - Normalizr’s purpose and how to use it
